@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tic Tac Toe</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/x-icon"
+        href="https://img.captain-droid.com/wp-content/uploads/2018/03/tictactoe-icon.png.webp">
+</head>
+
+<body>
+    <div class="container">
+        <section class="section-header">
+            <div class="header">
+                <p class="heading">Tic Tac Toe</p>
+            </div>
+        </section>
+        <div class="user-button-wrapper">
+            <button class="button user-button" type="button" value="player X"
+                onclick="selectPlayer('X')">player-X</button>
+            <button class="button user-button" type="button" value="player O"
+                onclick="selectPlayer('O')">player-O</button>
+        </div>
+        <section class="msg-section">
+            <h2 class="player-status"></h2>
+        </section>
+        <div class=" board" id="board">
+            <div class="box" onclick="boxClickedFunction(event)"></div>
+            <div class="box" onclick="boxClickedFunction(event)"></div>
+            <div class="box" onclick="boxClickedFunction(event)"></div>
+            <div class="box" onclick="boxClickedFunction(event)"></div>
+            <div class="box" onclick="boxClickedFunction(event)"></div>
+            <div class="box" onclick="boxClickedFunction(event)"></div>
+            <div class="box" onclick="boxClickedFunction(event)"></div>
+            <div class="box" onclick="boxClickedFunction(event)"></div>
+            <div class="box" onclick="boxClickedFunction(event)"></div>
+        </div>
+        <div class="reset-button">
+            <button class="button reset-btn" type="reset" value="reset" onclick="resetFunction()">Reset</button>
+        </div>
+    </div>
+    <script src=" ./script.js"> </script>
+</body>
+
+</html>

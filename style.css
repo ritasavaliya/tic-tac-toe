@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("https://media.istockphoto.com/vectors/dark-blue-nightly-brick-wall-realistic-design-background-vector-id1320984490?k=20&m=1320984490&s=612x612&w=0&h=bmv0uNsAzg6T5hLsOZXI_0DTMo4fSfo5DjHhSoymQpY=");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.header {
+    text-align: center;
+    font-size: 60px;
+    margin: 35px 0px;
+}
+
+.header:hover {
+    font-size: 70px;
+}
+
+.heading {
+    color: #e73895;
+    text-shadow: 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+}
+
+.msg-section {
+    height: 50px;
+}
+
+.board {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    max-width: 300px;
+    cursor: pointer;
+}
+
+.section-header {
+    height: 80px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    border: 5px solid blue;
+    box-shadow: 0px 5px 50px 0 blue;
+    color: #fff;
+    font-size: 70px;
+    text-align: center;
+    text-shadow: 0 0 10px #fff;
+}
+
+.button {
+    text-align: center;
+    border-radius: 50px;
+    height: 40px;
+    margin: 0 10px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.user-button {
+    width: 100px;
+    background-color: transparent;
+    border: 1px solid springgreen;
+    color: springgreen;
+    font-size: 18px;
+}
+
+.user-button:hover {
+    transition: 0.3s;
+    box-shadow: 0 0 10px springgreen, 0 0 30px springgreen;
+    background-color: springgreen;
+    color: black;
+    font-weight: 600;
+
+}
+
+.reset-button :hover {
+    box-shadow: 0 0 10px #e60073, 0 0 40px #e60073;
+    background-color: #e60073;
+    color: black;
+    font-weight: 600;
+    transition: 0.3s;
+    font-size: 25px;
+
+}
+
+.button:active {
+    transform: translateY(2px);
+}
+
+.box:hover {
+    box-shadow: 0 0 10px #fff, 0 0 40px #fff;
+}
+
+.user-button-wrapper,
+.reset-button {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.reset-btn {
+    color: #e73895;
+    background: transparent;
+    border: 2px solid #e60073;
+    font-size: 20px;
+}
+
+.player-status {
+    text-align: center;
+    color: #fff;
+    margin: 10px 0px;
+}
+
+@media screen and (min-width:300px) and (max-width:900px) {
+
+    .header {
+        margin: 0px;
+        font-size: 50px;
+    }
+
+    .header:hover {
+        font-size: 60px;
+    }
+
+    .user-button-wrapper,
+    .reset-button {
+        margin: 10px 0;
+    }
+
+    .msg-section {
+        height: 45px;
+    }
+}
